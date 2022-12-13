@@ -10,13 +10,16 @@ class FoodCategory extends CategoryProduct {
     public string $weight;
 
 
-    public function __construct($_type, $_enterprise, $_description, $_image = null, $_weight)
+    public function __construct($_category, $name, $price, $available, $_type, $_enterprise, $_description, $_weight, $_image = null)
     {
         $this->type = $_type;
         $this->enterprise = $_enterprise;
         $this->description = $_description;
         $this->image = $_image;
         $this->weight = $_weight;
+
+
+        parent::__construct($_category, $name, $price, $available);
     }
 }
 
