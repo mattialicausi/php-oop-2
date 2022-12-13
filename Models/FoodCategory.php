@@ -6,8 +6,8 @@ class FoodCategory extends CategoryProduct {
     public string $type;
     public string $enterprise;
     public string $description;
-    public $image;
-    public $weight;
+    public string $image;
+    public string $weight;
 
 
     public function __construct($_type, $_enterprise, $_description, $_image = null, $_weight)

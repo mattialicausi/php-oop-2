@@ -3,6 +3,7 @@
 // classe per le categorie
 class CategoryProduct extends Product {
     public bool|string $category;
+    
 
     public function __construct($_category, $name, $price, $available)
     {
