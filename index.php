@@ -45,4 +45,13 @@ var_dump($cuccia1);
 
 $cuccia2 = new CucceCategory(false, "GattoComodo, cuccia rotonda", 20, true, "Lorem ipsum faet", "Legno", "RoyalGatto", "https://cdn.shopify.com/s/files/1/0558/4771/4869/products/Cuccia-gatto-grigio_grande.jpg?v=1646739774");
 var_dump($cuccia2);
+
+
+// includo il codice html
+include_once __DIR__.'/partials/header.php';
+
+include_once __DIR__ . '/partials/main.php';
+
+include_once __DIR__.'/partials/footer.php';
+
 ?>
