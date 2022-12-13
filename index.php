@@ -23,7 +23,7 @@ echo '<br><br>';
 $food1 = new FoodCategory(true, "Medium/Adult", 3.5, true, 'Biscotti', "Alesi", "Lorem ipsum en cose amet illus per dius", 10, "https://www.modacani.it/prodotti/big/937.jpg");
 var_dump($food1);
 
-$food2 = new FoodCategory(false,"Small", 2.5, false,'Croccantini', "Bruno", "Lorem ipsum en cose amet illus mes", 5, "https://www.modacani.it/prodotti/big/937.jpg");
+$food2 = new FoodCategory(false,"Small", 2.5, false,'Croccantini', "Bruno", "Lorem ipsum en cose amet illus mes", 5, "https://m.media-amazon.com/images/I/81swFbHrE4L._AC_SY355_.jpg");
 var_dump($food2);
 
 
@@ -39,7 +39,7 @@ var_dump($games2);
 
 echo '<br><br>';
 
-// GAMES CATEGORY
+// CUCCE CATEGORY
 $cuccia1 = new CucceCategory(true, "Barbour, cuccia interno morbido", 45, true, "Lorem ipsum faet", "Legno", "RoyalCanin", "https://wips.plug.it/cips/paginegiallecasa/cms/2022/07/shutterstock_2057400995-1-1.jpg?a=c");
 var_dump($cuccia1);
 
