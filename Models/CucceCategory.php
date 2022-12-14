@@ -1,6 +1,5 @@
 <?php
 
-
 // classe le per cucce
 class CucceCategory extends CategoryProduct {
 
@@ -19,6 +18,8 @@ class CucceCategory extends CategoryProduct {
         $this->image = $_image;
 
         parent::__construct($_category, $name, $price, $available);
+
+    
 
     }
 }

@@ -1,4 +1,13 @@
 <?php
+
+    function setAvailable($available) {
+        if ($available == false) {
+            throw new Exception('Il prodotto non è più disponibile');
+        } else {
+            return "Il prodotto è disponibile";
+        }
+    }
+
 ?>
     <main class="container">
 
@@ -13,6 +22,14 @@
                     <div>Prezzo: <?php echo $food1->price ?>€</div>
                     <div><?php echo $food1->enterprise ?></div>
                     <div><?php echo $food1->description ?></div>
+                    <div>Sconto di: <?php echo $food1->discount ?>€</div>
+
+                    <div><?php  try{
+                                    echo setAvailable($food1->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
 
@@ -25,6 +42,13 @@
                     <div>Prezzo: <?php echo $food2->price ?>€</div>
                     <div><?php echo $food2->enterprise ?></div>
                     <div><?php echo $food2->description ?></div>
+
+                    <div><?php  try{
+                                    echo setAvailable($food2->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
         </div>
@@ -45,6 +69,13 @@
                     <div>Prezzo: <?php echo $games1->price ?>€</div>
                     <div><?php echo $games1->enterprise ?></div>
                     <div><?php echo $games1->description ?></div>
+
+                    <div><?php  try{
+                                    echo setAvailable($games1->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
 
@@ -57,6 +88,13 @@
                     <div>Prezzo: <?php echo $games2->price ?>€</div>
                     <div><?php echo $games2->enterprise ?></div>
                     <div><?php echo $games2->description ?></div>
+
+                    <div><?php  try{
+                                    echo setAvailable($games2->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
 
@@ -74,6 +112,13 @@
                     <div>Prezzo: <?php echo $cuccia1->price ?>€</div>
                     <div><?php echo $cuccia1->enterprise ?></div>
                     <div><?php echo $cuccia1->description ?></div>
+
+                    <div><?php  try{
+                                    echo setAvailable($cuccia1->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
 
@@ -86,6 +131,13 @@
                     <div>Prezzo: <?php echo $cuccia2->price ?>€</div>
                     <div><?php echo $cuccia2->enterprise ?></div>
                     <div><?php echo $cuccia2->description ?></div>
+
+                    <div><?php  try{
+                                    echo setAvailable($cuccia2->available);
+                                }  catch (Exception $e) {
+                                    echo $e->getMessage();
+                                }
+                    ?></div>
                 </div>
             </div>
         </div>

@@ -7,6 +7,10 @@ include_once __DIR__ . '/Models/FoodCategory.php';
 include_once __DIR__ . '/Models/GamesCategory.php';
 include_once __DIR__ . '/Models/CucceCategory.php';
 
+
+include_once __DIR__. '/Traits/DiscountPrice.php';
+
+
 // PRODUCT
 $prodotto1 = new Product("Osso", 5, true);
 var_dump($prodotto1);
@@ -20,8 +24,10 @@ var_dump($prodotto2);
 echo '<br><br>';
 
 // FOOD CATEGORY
-$food1 = new FoodCategory(true, "Medium/Adult", 3.5, true, 'Biscotti', "Alesi", "Lorem ipsum en cose amet illus per dius", 10, "https://www.modacani.it/prodotti/big/937.jpg");
+$food1 = new FoodCategory(true, "Medium/Adult", 3, true, 'Biscotti', "Alesi", "Lorem ipsum en cose amet illus per dius", 10, "https://www.modacani.it/prodotti/big/937.jpg");
+$food1->setSconto(3);
 var_dump($food1);
+
 
 $food2 = new FoodCategory(false,"Small", 2.5, false,'Croccantini', "Bruno", "Lorem ipsum en cose amet illus mes", 5, "https://m.media-amazon.com/images/I/81swFbHrE4L._AC_SY355_.jpg");
 var_dump($food2);
@@ -41,10 +47,14 @@ echo '<br><br>';
 
 // CUCCE CATEGORY
 $cuccia1 = new CucceCategory(true, "Barbour, cuccia interno morbido", 45, true, "Lorem ipsum faet", "Legno", "RoyalCanin", "https://wips.plug.it/cips/paginegiallecasa/cms/2022/07/shutterstock_2057400995-1-1.jpg?a=c");
+
 var_dump($cuccia1);
+
 
 $cuccia2 = new CucceCategory(false, "GattoComodo, cuccia rotonda", 20, true, "Lorem ipsum faet", "Legno", "RoyalGatto", "https://cdn.shopify.com/s/files/1/0558/4771/4869/products/Cuccia-gatto-grigio_grande.jpg?v=1646739774");
 var_dump($cuccia2);
+
+
 
 
 // includo il codice html

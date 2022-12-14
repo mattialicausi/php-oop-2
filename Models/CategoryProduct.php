@@ -1,8 +1,12 @@
 <?php
 
+include_once __DIR__. '/../Traits/DiscountPrice.php';
+
 // classe per le categorie
 class CategoryProduct extends Product {
     public bool|string $category;
+
+    use DiscountPrice;
     
 
     public function __construct($_category, $name, $price, $available)
